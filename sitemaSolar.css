@@ -1,0 +1,212 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+
+    --mercurio: 2s;
+    --venus: 4s;
+    --terra: 6s;
+    --marte: 8s;
+    --jupter: 20s;
+    --saturno: 45s;
+    --urano: 65s;
+    --netuno: 100s;
+
+}
+
+.tab{
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    gap: 15px;
+    font-size: 2em;
+}
+
+
+h4{
+    margin-bottom: 10px;
+}
+
+body{
+    background-image: url("./Papel\ de\ Parede\ Minimalista\ Aesthetic\ Céu\ Estrelado.png");
+    background-size: cover;
+    display: flex;
+    background-size: cover;
+    justify-content: space-around;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+    transform-style: preserve-3d;
+}
+
+#box{
+    transform: scale(.5);
+}
+
+.sol{
+    position: relative;
+    width: 600px;
+    height: 600px;
+    border-radius: 50%;
+    background: #ff0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform-style: preserve-3d;
+    transform: rotateY(45deg) translateZ(100px);
+
+    box-shadow: inset -20px -20px 60px #00000099,
+            inset 20px 20px 60px #ffff00;
+
+            
+}
+
+.planetas{
+    position: absolute;
+    border-radius: 50%;
+    background: transparent;
+}.planetas::after{
+    position: absolute;
+    content: "";
+    left: 50%;    
+    border-radius: 50%;
+}
+
+#mercurio{
+    width: 108%;
+    height: 108%;
+    animation: mercurio linear var(--mercurio) infinite;
+}#mercurio::after{
+    width: 12px;
+    height: 12px;
+    background: rgb(0, 255, 0);
+    box-shadow: 20px 20px 60px #00ff00;
+}
+@keyframes mercurio {
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+#venus{
+    width: 124%;
+    height: 124%;
+    animation: venus linear var(--venus) infinite;
+}#venus::after{
+    width: 24px;
+    height: 24px;
+    background: rgb(107, 91, 91);
+    box-shadow: 20px 20px 60px rgb(107, 91, 91);
+}
+@keyframes venus {
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+#terra{
+    width: 143%;
+    height: 143%;
+    animation: terra linear var(--terra) infinite;
+}#terra::after{
+    width: 34px;
+    height: 34px;
+    background: rgb(46, 118, 251);
+    box-shadow: inset -20px -20px 60px #00000033,
+    inset 20px 20px 60px rgb(46, 118, 251);
+}
+@keyframes terra {
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+#marte{
+    width: 160%;
+    height: 160%;
+    animation: marte linear var(--marte) infinite;
+}#marte::after{
+    width: 26px;
+    height: 26px;
+    background: rgb(251, 87, 46);
+    box-shadow: inset -20px -20px 60px #00000033,
+    inset 20px 20px 60px rgb(251, 87, 46);
+}
+@keyframes marte {
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+#jupter{
+    width: 203%;
+    height: 203%;
+    animation: jupter linear var(--jupter) infinite;
+}#jupter::after{
+    width: 90px;
+    height: 90px;
+    background: rgb(163, 115, 103);
+    box-shadow: inset -20px -20px 60px #00000033,
+    inset 20px 20px 60px rgb(163, 115, 103);
+}
+@keyframes jupter {
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+#saturno{
+    width: 250%;
+    height: 250%;
+    animation: saturno linear var(--saturno) infinite;
+    display: flex;
+}#saturno::after{
+    width: 90px;
+    height: 90px;
+    background: rgb(247, 219, 141);
+    box-shadow: inset -20px -20px 60px #00000044,
+    inset 20px 20px 60px rgb(255, 236, 141);
+
+    border: outset 10px rgb(200, 124, 105);
+}
+@keyframes saturno {
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+#urano{
+    width: 275%;
+    height: 275%;
+    animation: urano linear var(--urano) infinite;
+}#urano::after{
+    width: 50px;
+    height: 50px;
+    background: rgb(98, 209, 252);
+    box-shadow: inset -20px -20px 60px #00000033,
+    inset 20px 20px 60px rgb(0, 183, 255);
+}
+@keyframes urano {
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+#netuno{
+    width: 298%;
+    height: 298%;
+    animation: terra linear var(--netuno) infinite;
+}#netuno::after{
+    width: 49px;
+    height: 49px;
+    background: rgb(98, 103, 252);
+    box-shadow: inset -20px -20px 60px #00000033,
+    inset 20px 20px 60px rgb(98, 103, 252);
+}
+@keyframes saturno {
+    to{
+        transform: rotate(360deg);
+    }
+}
